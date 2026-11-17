@@ -87,6 +87,7 @@ public class CompanionsPlugin : BaseUnityPlugin
 	{
 		Log = base.Logger;
 		if (CompanionsPlugin.LogNormal) Log.LogInfo("[BUILD] Companions.dll built from C# source");
+		Log.LogInfo("[FORK] nvenable314 fork of " + PluginName + " (based on upstream v" + PluginVersion + ")"); // fork marker
 		if (CompanionsPlugin.LogNormal) Log.LogInfo(PluginName + " v" + PluginVersion + " loading...");
 		if (OriginalInstalled())
 		{
